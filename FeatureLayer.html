@@ -63,8 +63,17 @@
             "Bike Counts": BikeLayer
         };
         
+        var center = [46.66593106947641, -92.3342514038086];
+        
+  
+        
         L.control.layers(null, overlayMaps).addTo(map);
         
+        var imageUrl = 'http://umn.maps.arcgis.com/sharing/rest/content/items/ad04380296e24cd1aa51989f9021ed13/data',
+imageBounds = [center, [46.79310694764, -92.248251]];
+
+var imageOverlay = L.imageOverlay(imageUrl, imageBounds).addTo(map);
+    
     </script>
 </body>
 </html>
