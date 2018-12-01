@@ -52,11 +52,11 @@
         const esriStreets = L.esri.basemapLayer('Gray').addTo(map);
         // add hosted feature layer
         
-        const BikeLayer = L.esri.featureLayer({url: 'https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/BikePedCounts2018/FeatureServer/0?token=1A9ALLPKBMc7Lf9elqtiNt9Lk-bMugAoCMqNqfzXc33K_sh9oM3SBM66Pklwz9oyhXhgvEzrG-mYgIxO6xyJnPvgIMzvQ7BFx00mhXeVRk3n5AbxDP5CwOXIVw1MfYqL1g9HngYVxumk1N70Dc9UoPUTNBeaZGymnN3CfcY3nDjtwgvGxp3GvaSliLWdv8e0RXYqr9ebr1n5aIiT1NvC0u808heWM6rHiBgoimjWkoDcsaNGpJxV9Zkw99LWkxCp'}).addTo(map);
+        const BikeLayer = L.esri.featureLayer({url: 'https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/BikePedCounts2018/FeatureServer/0'}).addTo(map);
         
         
         
-        const PedLayer = L.esri.featureLayer({url: 'https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/BikePedCounts2018/FeatureServer/1?token=1A9ALLPKBMc7Lf9elqtiNt9Lk-bMugAoCMqNqfzXc33K_sh9oM3SBM66Pklwz9oyhXhgvEzrG-mYgIxO6xyJnPvgIMzvQ7BFx00mhXeVRk3n5AbxDP5CwOXIVw1MfYqL1g9HngYVxumk1N70Dc9UoPUTNBeaZGymnN3CfcY3nDjtwgvGxp3GvaSliLWdv8e0RXYqr9ebr1n5aIiT1NvC0u808heWM6rHiBgoimjWkoDcsaNGpJxV9Zkw99LWkxCp'}).addTo(map);
+        const PedLayer = L.esri.featureLayer({url: 'https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/BikePedCounts2018/FeatureServer/1'}).addTo(map);
        
         var overlayMaps = {
             "Pedestrian Counts": PedLayer,
